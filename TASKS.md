@@ -18,3 +18,11 @@ Statuses: backlog / claimed / in-progress / review / blocked / done. Track deplo
 | YAA-010 | P2 | Prepare a minimal implementation PR after reconciliation | Unassigned | blocked | Precise diff, validation, risks, rollback and scoped approval request |
 
 No task is marked deployed. Do not treat the audit's suggested 7-day/30-day dates as automatic execution or authorization.
+
+## Email setup follow-up — 2026-10-18
+
+| ID | Priority | Task | Owner | Status | Acceptance |
+|---|---|---|---|---|---|
+| YAA-070 | P1 | Prepare the user-supplied eight retention emails and Shopify Messaging build/QA specification; implementation subtask of YAA-060 | Codex | claimed | Reconcile retention branch, avoid duplicate codes/flows, produce review PR; sending/activation remains unapproved |
+
+Claude retention branch records Shopify Messaging as selected, codes already created and welcome flow underway. Do not duplicate its work. This task does not merge or replace that branch.
