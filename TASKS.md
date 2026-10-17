@@ -41,3 +41,31 @@ Compare-at €0,00 fix; free shipping combinable with discounts; popup codes com
 - YAA-007 / YAA-009 cover discount stacking and margin. The sales lane will not create or change discounts until YAA-011 is decided.
 - WELCOME10, ANGELGLOW15 and ANGELRETURNS were created 11 Oct by other sessions. Treated as owned by Sales (origin unconfirmed) and Retention. The sales lane will not duplicate them.
 - YAA-010 / e-commerce lane own theme changes. The draft theme is handed over as YAA-012.
+
+## E-commerce-plan lane (added by Claude Code, YAA-001, 2026-10-17)
+Source: "E-Commerce plan" Claude project (plan section 5, You Are Angel – 50 Sales a Day Plan, 2026-10-11). Note: the plan itself named "the web lane (Codex and ChatGPT)" for these items; ownership below is a proposal for Jian and Codex to accept. Nothing here authorizes store changes. IDs start at YAA-019 to avoid the sales lane's YAA-011..018.
+
+| ID | Priority | Task | Owner | Status | Depends on / overlaps | Acceptance |
+|---|---|---|---|---|---|---|
+| YAA-019 | P1 | Countdown timer ("Hurry up! Sale ends in") still enabled on both product templates; homepage collection sections have show_countdown on | Claude e-commerce lane prepares (proposed) | backlog | Same draft as YAA-012 (one draft, not two); YAA-011 (no timer unless a real end date) | Rendered check shows whether it displays; removed or tied to a real end date in a draft; publish approval in DECISIONS.md |
+| YAA-020 | P2 | Theme demo text in live header mega-menu ("All Skin Care / UP TO 30% OFF", "All Body Care / FREE SHPPING"); product title typo "Stawberry Bloom" | Claude e-commerce lane prepares (proposed) | backlog | YAA-012 draft; title edit is a live product change | Text removed in draft; title fix listed for approval |
+| YAA-021 | P1 | Verify TikTok and Meta pixels and that purchase events fire | Jian checks Customer events; Claude e-commerce lane documents (proposed) | blocked | API read denied (no read_pixels scope); YAA-018 admin access; overlaps YAA-004/005 and Marketing Spark/retargeting ads | Each pixel listed connected/not, with evidence; no test purchase without approval |
+| YAA-022 | P1 | Signup popup with the one welcome offer, shown after 8–10 s or on exit | Display: Claude e-commerce lane (proposed). Offer: sales lane. Flows: Retention | blocked | YAA-011; WELCOME10 vs SW- popup codes (sales C4); Trustoo popup app is active, theme popup is disabled | One popup, one code, timing set; no duplicate first-order codes |
+| YAA-023 | P1 | Customer photos and reviews on homepage and product pages | Claude e-commerce lane (proposed) | blocked | YAA-008 (claim evidence); Judge.me badge is on the product template but its reviews block is disabled | Only verified reviews shown; placement prepared in draft |
+| YAA-024 | P2 | Cart prompt: plan's free-shipping progress bar is moot (free shipping on every order); replace with a "second set" prompt | Claude e-commerce lane (proposed) | blocked | YAA-011 (which bundle); YAA-007/009; Monster Cart Upsell app already installed | Prompt matches the confirmed offer; no new app |
+| YAA-025 | P2 | TikTok landing page (best sellers, proof, one offer) | Claude e-commerce lane (proposed) | backlog | YAA-011, YAA-014 (UTMs), Marketing creative | Page prepared unpublished; tracked link defined |
+
+### Completed e-commerce-lane items (evidence in HANDOVER.md)
+- 2026-10-11: read-only store audit against plan section 5.
+- 2026-10-11: compare-at price 0.00 cleared on 30 products / 136 variants. Also logged by the sales lane (126 variants); same fix, counted once.
+- Done on the live theme since, by the sales lane or Jian (14 Oct), not by this lane: announcement-bar wording, delivery time, cost-per-wear block, size-guide popup, returns tab, trust line, low-stock bar disabled on the product template in use, Clarity.
+
+### Proposed ownership of existing shared tasks (needs Codex/Jian acceptance; not started)
+- YAA-003 (size guide) and YAA-006 (mobile performance): Claude e-commerce lane.
+- YAA-010 / YAA-012 (theme draft): Claude e-commerce lane rebuilds one draft from current MAIN (203435966728) carrying YAA-012, YAA-019 and YAA-020 together. **Overlap:** the sales lane prepared draft 203557044488 and proposed "YAA-010 owner decides". Not starting until accepted.
+
+### Overlaps flagged before starting any task
+- Theme work: one draft only, shared by the sales and e-commerce lanes (YAA-012/019/020).
+- Delivery and shipping wording stays with YAA-002 (Codex).
+- Welcome codes and popup: sales (offer), Retention (flows), this lane (display only).
+- Pixels and tracking: YAA-004/005 (Codex) and Marketing ads.

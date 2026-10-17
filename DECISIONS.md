@@ -28,3 +28,6 @@ Recorded by Claude Code during YAA-001 (2026-10-17) from the "Sales plan" Claude
 
 ### Open conflict — main offer (YAA-011)
 Observed in store 2026-10-17 (read-only): BUY 2 GET 1 FREE is active with no end date (updated 2026-10-11T15:16:11Z), and the "Any 2 sets – 15% off" discount was deleted. Other Claude projects' scheduled tasks now describe B2G1 as the single main offer. Which decision is current is not recorded here. **Jian to confirm.**
+
+## 2026-10-11 — E-Commerce plan project (pre-repo)
+Recorded by Claude Code during YAA-001 (2026-10-17) from the "E-Commerce plan" Claude project chat. On 2026-10-11 Jian asked Claude to act on the plan's e-commerce section, "use any skills or app which are necessary". Under that instruction Claude cleared the 0.00 compare-at price on 30 products (136 variants), a display fix. Claude then asked for decisions on shipping, the offer and social URLs before any theme work; no answer is recorded in that project. This record does not authorize further changes, and the instruction predates this repository's read-only rules.

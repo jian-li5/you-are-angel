@@ -102,3 +102,61 @@ Next action / proposed owner:
 2. Codex reviews this branch and the overlap list, then merges or comments.
 3. The sales lane then takes YAA-013 and YAA-014 when their inputs arrive.
 4. PROJECT_STATUS.md still says the Claude connection is unverified; it is now verified for this project. Left for the file owner to update.
+
+## 2026-10-17 21:00 Asia/Shanghai — Claude Code ("E-Commerce plan" Claude project) — YAA-001 reconciliation
+Date/time/timezone: 2026-10-17, about 21:00 Asia/Shanghai (13:00 UTC).
+Agent: Claude Code, working for the "E-Commerce plan" Claude project only (plan section 5: conversion and store). The Sales plan entry above is unchanged and still stands for its lane. Marketing, Retention, Operations and Roadmap projects are not reconciled here.
+Task ID: YAA-001 (e-commerce scope).
+Branch and commit: `claude/YAA-001-ecommerce`, branched from `claude/YAA-001` (67a6516) so the sales-lane changes are kept. Claim commit pushed first, then this commit. No changes to `main` or `claude/YAA-001`.
+Files changed: TASKS.md (YAA-001 status note; new "E-commerce-plan lane" section, YAA-019..025), HANDOVER.md (this entry), DECISIONS.md (appended pre-repo e-commerce record).
+
+### Repository and local state found
+- This project had **no local clone, commits or branches** before today. Its work lived in one project chat (11 Oct) and one live store change.
+- Fresh shallow clone of main `23deff5`, clean tree. Only remote `origin` → github.com/jian-li5/you-are-angel, unchanged. Remote branches found: `main`, `claude/YAA-001` (sales lane, pushed 20:21 today, status review).
+- Project docs: only the 50-sales plan (.docx). No e-commerce project memory or execution log existed.
+
+### Completed e-commerce work (before this repo and its read-only rules)
+| Date (2026) | Work | Evidence now (read-only, 17 Oct) | State |
+|---|---|---|---|
+| 11 Oct | Read-only audit of plan section 5: themes, header/footer/product templates, discounts, shipping rates, markets, 90-day sessions by device | Project chat, 11 Oct | Done. Its open questions (shipping, offer, social URLs) were never answered in this project; the sales lane settled the first two on 11 Oct (see its entry), so they are superseded here |
+| 11 Oct | Cleared compare-at price 0.00 on 30 products / 136 variants (incl. the 20-variant Angel Aura Shimmer Base Set) | Variants 52134564266248, 52746109092104, 52806873448712: compareAtPrice null | Deployed; still in place. **Duplicate log:** the sales entry records the same fix as 126 variants on 30 products. Both sessions ran the same change the same day; result is identical. Count it once |
+
+Approval reference: DECISIONS.md, "2026-10-11 — E-Commerce plan project (pre-repo)".
+
+### Plan section 5 "Fix first" items — status on 17 Oct (live MAIN theme 203435966728, published 14 Oct)
+| Item | Status | Evidence | Next |
+|---|---|---|---|
+| Social links in header/footer | **Not live.** No social URLs in MAIN settings; footer has no social column | config/settings_data.json, sections/footer-group.json (updated 14 Oct 07:24 UTC) | Prepared in sales draft 203557044488 → YAA-012 |
+| Countdown timer | **Still enabled** on product.json and product.yaa-template-product-page.json; homepage collections have show_countdown true | Template JSON | YAA-019. Whether it actually renders is unverified (hypothesis: only when a sale end date exists) |
+| Replace expiring promotion | **Done (wording)** by sales lane/Jian 14 Oct: bar now reads B2G1 + free shipping + 7–10 working days + size link, no expiry date | sections/header-group.json | Offer itself open in YAA-011 |
+| Pixels (TikTok, Meta) and purchase events | **Missing data.** API read denied (needs read_pixels). Clarity app embed present | webPixel query error; settings_data | YAA-021 |
+| Mobile speed and checkout on a phone | **Not done.** No measurement; no checkout test (needs approval) | — | YAA-006, YAA-007/015 |
+
+"Build next" items found already live on the yaa product template (used by all active products per a template_suffix count of 143/143; that filter was unreliable for the sales lane, so treat as likely, not confirmed): size-guide popup, cost-per-wear and Preorder block, trust line, Shipping tab, Refund & Exchange tab, low-stock bar disabled. Not live: reviews block (disabled; Judge.me badge only), homepage customer photos, cart prompt, TikTok landing page.
+
+Other findings still open from 11 Oct: header mega-menu demo text ("All Skin Care / UP TO 30% OFF", "All Body Care / FREE SHPPING") and the "Stawberry Bloom" title (YAA-020). 13 designs priced below the plan's $29.99 floor were kept as entry items by Jian's sales-lane decision; no action here.
+
+### Checks actually run today (read-only)
+- git: clone, status, remote -v, branch -a, ls-remote (twice, before branching), fetch, log and diff of `claude/YAA-001`.
+- Read AGENTS.md, CLAUDE.md, README.md, PROJECT_STATUS.md, TASKS.md, HANDOVER.md, DECISIONS.md and the sales execution log. The audit HTML was not re-read in full.
+- Shopify GraphQL reads: themes; three sample variants; MAIN header-group, footer-group, settings_data, product.json and product.yaa-template-product-page.json; active product counts. webPixel read denied.
+- Not run: storefront render, mobile speed, cart/checkout, discounts and shipping rates (not re-read today; see sales entry for 17 Oct discount state). No app tests apply.
+
+### Prepared / reviewed / approved / deployed / verified
+Compare-at fix: approved (pre-repo, in chat), deployed, verified by sample. Everything else from this lane: not prepared. Nothing was changed in Shopify, deployed or published in this session.
+
+### Dependencies
+- YAA-011 (main offer) blocks YAA-019 timer wording, YAA-022, YAA-024, YAA-025.
+- YAA-012 draft decision blocks YAA-019 and YAA-020 (one draft for both lanes).
+- YAA-018 (admin access) blocks YAA-021 and any theme-editor check.
+- YAA-008 blocks YAA-023. YAA-002 owns all delivery wording.
+
+### Blockers
+- Pixel status needs Jian (Shopify admin › Settings › Customer events) or a read_pixels scope.
+- No agent browser path into Shopify admin (YAA-018).
+
+### Next action / proposed owner
+1. Codex reviews `claude/YAA-001-ecommerce` (it contains `claude/YAA-001`, so merging this branch merges both lanes) and accepts or changes the proposed owners.
+2. Jian answers YAA-011 and checks pixels (YAA-021).
+3. Once accepted, the e-commerce lane claims YAA-003 or YAA-019/020 (in one rebuilt draft), pushing a claim first.
+4. PROJECT_STATUS.md still says Claude is unverified; left for its owner to update.
