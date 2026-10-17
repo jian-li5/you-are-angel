@@ -1,0 +1,13 @@
+# Secrets and private exports
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+customer-exports/
+order-exports/
+private-data/
+node_modules/
+.DS_Store
