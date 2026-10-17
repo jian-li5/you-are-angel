@@ -110,7 +110,7 @@ Task ID: YAA-001 (marketing-plan scope).
 Branch and commit: `claude/YAA-001-marketing`, branched from `origin/claude/YAA-001` (67a6516) so the Sales-lane entry is kept. Claim commit pushed first, then this reconciliation commit. `main` and `claude/YAA-001` were not touched.
 Files changed:
 - HANDOVER.md: this entry
-- TASKS.md: the YAA-001 owner cell, and an appended marketing-lane section (YAA-019 to YAA-026)
+- TASKS.md: the YAA-001 owner cell, and an appended marketing-lane section (YAA-050 to YAA-057; first pushed as 019–026, renumbered because the Retention lane claimed those IDs first)
 - DECISIONS.md: an appended marketing-project record
 - docs/marketing-plan/marketing-plan-v2-summary.md: new, with a status note
 
@@ -143,12 +143,12 @@ User-made live changes reported in this project: Jian tested B2G1 at checkout (1
 - Sessions 12–17 Oct by landing page: 66 in total, 54 on `/` (82%). 4 cart-addition sessions, 4 reached checkout and 0 completed, all on `/`. Team or test sessions are not excluded.
 - Sales by product, 12–17 Oct: no rows, so 0 orders. The Halloween push (deadline 16 Oct) produced no recorded sales. Whether the videos were posted is not verified.
 
-### Superseded or conflicting facts in the marketing plan (flagged, not yet edited; task YAA-020)
+### Superseded or conflicting facts in the marketing plan (flagged, not yet edited; task YAA-051)
 - **M1:** v2 says overselling is blocked and B2G1 does not combine with shipping. Both changed later on 11 Oct (13:20 and 15:16 UTC). The hero-stock rule should be reframed around made-to-order lead time.
 - **M2:** v2 sets B2G1 plus free shipping as the single message. That conflicts with the Sales-lane decision for "Any 2 sets – 15% off" (YAA-011, Sales C1). Jian's 11 Oct remark favours keeping B2G1, but no decision is recorded.
-- **M3:** v2's Black Friday plan (B2G1 plus a gift for the first 15 orders) conflicts with the Operations lane's bundle that pauses B2G1 (YAA-024).
-- **M4:** v2's week 1 included a phone test order and app installs. Under AGENTS.md these are Jian-only, approval-gated actions (YAA-015, YAA-023).
-- **M5:** v2 starts Spark Ads on 26 Oct. The Codex audit says don't expand paid traffic before checkout and attribution are verified (YAA-004/007). Deferred as YAA-025.
+- **M3:** v2's Black Friday plan (B2G1 plus a gift for the first 15 orders) conflicts with the Operations lane's bundle that pauses B2G1 (YAA-055).
+- **M4:** v2's week 1 included a phone test order and app installs. Under AGENTS.md these are Jian-only, approval-gated actions (YAA-015, YAA-054).
+- **M5:** v2 starts Spark Ads on 26 Oct. The Codex audit says don't expand paid traffic before checkout and attribution are verified (YAA-004/007). Deferred as YAA-056.
 - **M6:** v2's 90-day metrics (13 Jul–11 Oct) and the audit's (19 Jul–16 Oct) use different windows. Both are labelled; no correction is needed.
 
 ### Checks actually run today
@@ -164,8 +164,8 @@ User-made live changes reported in this project: Jian tested B2G1 at checkout (1
 - Verified: read-only state above.
 
 Approval reference: DECISIONS.md, "2026-10-11 to 2026-10-14 — Marketing plan project".
-Blockers: YAA-011 offer decision; Jian's hero list (YAA-019); YAA-014 link convention; the Operations Black Friday plan (YAA-024).
+Blockers: YAA-011 offer decision; Jian's hero list (YAA-050); YAA-014 link convention; the Operations Black Friday plan (YAA-055).
 Next action / proposed owner:
 1. Jian decides YAA-011 and the hero list.
 2. Codex reviews `claude/YAA-001` and `claude/YAA-001-marketing` (this branch includes the Sales commits) and merges or comments.
-3. The marketing lane then takes YAA-020 (update the plan) and drafts YAA-021 copy. It will not start creator, link, test-order or ads work owned elsewhere.
+3. The marketing lane then takes YAA-051 (update the plan) and drafts YAA-052 copy. It will not start creator, link, test-order or ads work owned elsewhere.

@@ -39,7 +39,7 @@ Target unchanged from the 11 Oct plan: 10 sales/day by 6 Dec 2026 (week 8) and 5
 - **Change:**
   - Instagram from week 1
   - Black Friday planning in week 4
-  - Spark Ads test of $10/day from week 3 (now blocked; see YAA-025)
+  - Spark Ads test of $10/day from week 3 (now blocked; see YAA-056)
   - Meta retargeting from month 3
   - referral programme after 200 customers
   - Pinterest via catalog sync
