@@ -44,5 +44,5 @@ Recorded by Claude Code during YAA-001 (2026-10-17) from the "Retention plan" Cl
 ### Open conflicts raised by the retention lane
 - **R-O1.** The claude.ai "Decision Log" doc duplicates this file. Proposal: this file is authoritative. Jian to confirm.
 - **R-O3.** Which 10% welcome mechanism is canonical: the SW- popup codes, WELCOME10, or both. Jian to decide (see YAA-007).
-- **R-O5.** UGC reward: the shared ANGELGLOW15 (past buyers only, once each) or one code per customer (Sales log). Jian to decide (YAA-043).
+- **R-O5.** UGC reward: the shared ANGELGLOW15 (past buyers only, once each) or one code per customer (Sales log). Jian to decide (YAA-063).
 - **Black Friday early-access date.** Marketing Plan v2 says 24 Nov; Operations OPS-20 says 26 Nov. Jian to decide.

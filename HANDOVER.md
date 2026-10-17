@@ -113,7 +113,7 @@ Task ID: YAA-001 (retention scope).
 Branch and commit: `claude/YAA-001-retention`, branched from `origin/claude/YAA-001` at 67a6516. The claim commit was pushed first, then this reconciliation commit. No changes to `main` or `claude/YAA-001`.
 
 Files changed:
-- TASKS.md: YAA-001 owner/status note; new Retention lane section YAA-040 to YAA-046, renumbered from 019–026 to avoid the e-commerce branch's IDs; overlap list R-O1 to R-O7.
+- TASKS.md: YAA-001 owner/status note; new Retention lane section YAA-060 to YAA-066; overlap list R-O1 to R-O8; proposed per-lane ID blocks.
 - DECISIONS.md: appended record of retention approvals given before this repo; open conflicts.
 - HANDOVER.md: this entry.
 - docs/retention/status-2026-10-17.md: new; sanitized lane state.
@@ -124,9 +124,11 @@ Files changed:
   - the live Shopify changes listed below
 - Clone (shallow) of main at `23deff5`: working tree clean. Remote `origin` → github.com/jian-li5/you-are-angel, unchanged.
 - Remote branches found: `main` and `claude/YAA-001` (Sales plan project, 2 commits, in review). This branch builds on the latter and does not edit its entries.
-- Found during this session: `claude/YAA-001-ecommerce` (e-commerce reconciliation, f76ad1a) and `claude/YAA-001-marketing` (claim only, 2c901dd). Both branch from `claude/YAA-001`.
-  - Retention IDs were moved to the YAA-040 block to avoid e-commerce's YAA-019 to YAA-025.
-  - The SendWILL sign-up cap was folded into e-commerce YAA-022.
+- Found during this session: `claude/YAA-001-ecommerce` (e-commerce reconciliation, now 15e2da5) and `claude/YAA-001-marketing` (marketing reconciliation, now d9d15ff). Both branch from `claude/YAA-001` and pushed while this session was working.
+  - Retention IDs moved 019→040→060 because the lanes were renumbering at the same time. E-commerce now uses 040–046 and Marketing 019–026.
+  - TASKS.md proposes one ID block per lane.
+  - The e-commerce entry still cites retention's first numbers (023, 024, 025). They now map to: the popup cap, folded into e-commerce YAA-043; YAA-064 (nail size); YAA-065 (catalogue tags).
+  - The SendWILL sign-up cap was folded into e-commerce YAA-043.
   - New overlaps R-O7 and the popup-app evidence conflict were added to TASKS.md (R-O3).
 
 ### Completed retention work
@@ -139,11 +141,11 @@ Files changed:
 | 11 Oct | Retention Playbook: welcome (4), abandoned checkout (3), post-purchase (3), win-back (2), weekly campaigns, parcel card, scorecard | claude.ai doc | Prepared |
 | 17 Oct | Halloween removed; calendar re-planned for Black Friday 27–30 Nov | Playbook revision | Prepared |
 | 17 Oct | Cross-project Decision Log doc | claude.ai doc | Prepared; overlaps DECISIONS.md (R-O1) |
-| 17 Oct | Setup checklist: final paste-ready copy for Shopify Messaging, plus a fast version | Playbook "Setup checklist" tab | Prepared; Jian executing (YAA-040) |
-| 17 Oct | Read-only catalogue tag audit (findings in the status doc) | GraphQL collection and product reads | Reported; handed to YAA-045 |
+| 17 Oct | Setup checklist: final paste-ready copy for Shopify Messaging, plus a fast version | Playbook "Setup checklist" tab | Prepared; Jian executing (YAA-060) |
+| 17 Oct | Read-only catalogue tag audit (findings in the status doc) | GraphQL collection and product reads | Reported; handed to YAA-065 |
 
 ### In progress
-**YAA-040, owned by Jian.** He is building the Shopify Messaging automations in Safari. The welcome flow was nearly done at 15:48 Asia/Shanghai on 17 Oct, by his report. Not verified, because the Admin API exposes no Messaging automation state to this agent.
+**YAA-060, owned by Jian.** He is building the Shopify Messaging automations in Safari. The welcome flow was nearly done at 15:48 Asia/Shanghai on 17 Oct, by his report. Not verified, because the Admin API exposes no Messaging automation state to this agent.
 
 ### Checks actually run today (read-only)
 - git: clone, status, remote -v, branch -a, ls-remote, fetch of `claude/YAA-001`, diff against main.
@@ -163,21 +165,21 @@ Nothing was changed in Shopify, sent or deployed in this session.
 Approval reference and scope: DECISIONS.md, "2026-10-11 to 2026-10-17 — Retention plan project (pre-repo approvals)".
 
 ### Overlaps flagged before starting any further task
-R-O1 to R-O6 in TASKS.md. The main ones:
+R-O1 to R-O8 in TASKS.md. The main ones:
 - offer copy depends on YAA-011
 - three overlapping 10% welcome mechanisms (YAA-007, Sales C4)
-- shared vs per-customer UGC reward (YAA-043)
+- shared vs per-customer UGC reward (YAA-063)
 - delivery wording (YAA-002)
 - Black Friday early-access date (24 vs 26 Nov)
 
 ### Blockers
 - Jian's decisions on YAA-011, R-O3, R-O5 and the early-access date.
-- The real shape and length of the Silk Fan Reverie products (YAA-045).
+- The real shape and length of the Silk Fan Reverie products (YAA-065).
 - Agent access to Shopify admin (YAA-018).
 
 ### Next action / proposed owner
-1. Jian finishes YAA-040, using the fast version for the last three flows, and resolves the open conflicts in DECISIONS.md.
+1. Jian finishes YAA-060, using the fast version for the last three flows, and resolves the open conflicts in DECISIONS.md.
 2. Codex reviews this branch together with `claude/YAA-001`, `claude/YAA-001-ecommerce` and `claude/YAA-001-marketing`. All four branch from `claude/YAA-001`. Each appends its own sections to TASKS.md, HANDOVER.md and DECISIONS.md and edits the one YAA-001 row. Merge them one at a time and keep every lane's text; the YAA-001 row needs a hand merge that lists each lane's state.
-3. The retention lane drafts the 20 Oct campaign (YAA-042) only after Jian confirms.
+3. The retention lane drafts the 20 Oct campaign (YAA-062) only after Jian confirms.
 
 PROJECT_STATUS.md is left for its owner. It still says the Claude connection is unverified; for this project it is verified by this push.
