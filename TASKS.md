@@ -41,3 +41,42 @@ Compare-at €0,00 fix; free shipping combinable with discounts; popup codes com
 - YAA-007 / YAA-009 cover discount stacking and margin. The sales lane will not create or change discounts until YAA-011 is decided.
 - WELCOME10, ANGELGLOW15 and ANGELRETURNS were created 11 Oct by other sessions. Treated as owned by Sales (origin unconfirmed) and Retention. The sales lane will not duplicate them.
 - YAA-010 / e-commerce lane own theme changes. The draft theme is handed over as YAA-012.
+
+## Retention lane (added by Claude Code, YAA-001, 2026-10-17)
+Source: "Retention plan" Claude project (plan section 6). Lane state: docs/retention/status-2026-10-17.md.
+IDs YAA-019 to YAA-026 are provisional. If another branch used them first, renumber on merge and keep both.
+Owners are proposals until accepted. Nothing here authorizes store changes, customer email or deployment.
+
+| ID | Priority | Task | Owner | Status | Depends on / overlaps | Acceptance |
+|---|---|---|---|---|---|---|
+| YAA-019 | P0 | Switch on 4 email automations in Shopify Messaging (welcome, abandoned checkout, post-purchase, win-back) | Jian builds and switches on in Safari; Claude retention lane supplies the copy | in-progress (welcome nearly done per Jian, 17 Oct; unverified) | YAA-011 (offer line in welcome email 4); YAA-002 (7–10 working days); YAA-018 (no agent admin access); YAA-007 (which welcome code is canonical) | Each flow on and test-sent; copy matches YAA-011 and YAA-002 outcomes; recorded in HANDOVER.md |
+| YAA-020 | P1 | One-to-one notes to the 2 existing paid buyers (thank-you, fit check, ANGELRETURNS / ANGELGLOW15) | Jian sends from his own inbox; Claude drafted | backlog | Draft mentions Merry Muse; one buyer is not opted in to marketing, so her note is service-only | Sent by Jian; no marketing to non-consenting customers |
+| YAA-021 | P1 | Weekly subscriber campaigns 20 Oct to 29 Dec (calendar in the retention status doc) | Claude retention lane drafts; Jian approves and sends each one | backlog | YAA-011; Ops OPS-17 bundle prices; early-access date 24 vs 26 Nov (Marketing v2 vs Ops OPS-20); Marketing posting dates; YAA-008 for customer photos | Each campaign approved by Jian before sending; dates agree with Marketing and Ops |
+| YAA-022 | P1 | Photo/video reward and parcel card | Retention lane (reward mechanism); Ops prints cards (OPS-13) | blocked | **Overlap:** Sales log says the UGC reward should be issued per customer, not as one shared code; retention made ANGELGLOW15 (shared code, past buyers only, once each). Jian to choose | One reward mechanism recorded in DECISIONS.md; card text matches it |
+| YAA-023 | P1 | SendWILL Free plan caps sign-ups at about 30 new subscribers a month (plan needs about 600 a month at 500 visits/day × 4%) | E-commerce lane + Jian (proposed) | backlog | Popup is e-commerce scope; feeds YAA-019 welcome flow | Decision recorded: upgrade SendWILL or move the sign-up to Shopify Forms; no subscriber is lost to the cap |
+| YAA-024 | P2 | Nail-size memory: Flow workflow writes `angel.nail_size` on each order; theme pre-selects the saved size | Flow: Jian (store change); theme: YAA-010 / e-commerce owner | backlog | YAA-010 (theme), YAA-018 | Size saved on new orders; theme change only with explicit approval |
+| YAA-025 | P1 | Catalogue tags: add occasion/shape/length tags to 10 Silk Fan Reverie products; fix 3 shape conflicts; clean run-on tags | Proposed: catalogue/e-commerce lane (overlaps Ops OPS-03); retention lane found it read-only on 17 Oct and can prepare the tag list | blocked | Jian supplies the real shape and length; product edits need explicit approval | Every active product has exactly one shape and one length tag and at least one occasion tag; changes approved first |
+| YAA-026 | P2 | Retention metrics (90-day repeat rate, repeat orders/day, subscribers, flow conversion, code uses) | Proposed: add them to the Sales lane's Monday scorecard (YAA-016) rather than a second scheduled task | backlog | YAA-016 owner | One scorecard carries the retention rows |
+
+### Completed retention-lane items (11–17 Oct 2026; evidence in HANDOVER.md)
+Done in Shopify on 11 Oct, before this repo existed:
+- 3 retention segments
+- ANGELRETURNS and ANGELGLOW15 codes
+- `angel.nail_size` customer field, with values and size tags on 2 customers
+
+Done outside Shopify:
+- Retention Playbook (all flow and campaign copy)
+- Halloween removed and calendar re-planned for Black Friday (17 Oct)
+- Setup checklist with final copy (17 Oct)
+- Platform decision: Shopify Messaging, not SendWILL Free (17 Oct)
+- Read-only catalogue-tag audit (17 Oct)
+
+No customer email has been sent by Claude.
+
+### Overlaps flagged by the retention lane before starting any task
+- **R-O1 Coordination.** The claude.ai "Decision Log" doc (17 Oct) duplicates this repo's DECISIONS.md. Proposal: DECISIONS.md is authoritative; the doc becomes a pointer to the repo. Jian to confirm.
+- **R-O2 Offer (YAA-011).** Retention copy says "buy 2, get the third free" (welcome email 4, Merry Muse 3 Nov). It will be rewritten once YAA-011 is decided. The retention codes do not stack with any product discount by design.
+- **R-O3 Welcome code (YAA-007, Sales C4).** Three 10% first-order mechanisms exist: the SW- popup codes, WELCOME10 (Sales, created 11 Oct 12:59 UTC) and the welcome flow, which currently points to the popup code. One must be canonical.
+- **R-O4 Delivery wording (YAA-002).** Retention emails say 7–10 working days. They will follow YAA-002's wording.
+- **R-O5 UGC reward (YAA-022).** See the row above.
+- **R-O6 Catalogue tags (YAA-025)** are not retention scope. They are flagged for the catalogue owner.

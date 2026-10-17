@@ -102,3 +102,78 @@ Next action / proposed owner:
 2. Codex reviews this branch and the overlap list, then merges or comments.
 3. The sales lane then takes YAA-013 and YAA-014 when their inputs arrive.
 4. PROJECT_STATUS.md still says the Claude connection is unverified; it is now verified for this project. Left for the file owner to update.
+
+## 2026-10-17 21:00 Asia/Shanghai — Claude Code ("Retention plan" Claude project) — YAA-001 reconciliation
+Date/time/timezone: 2026-10-17, about 21:00 Asia/Shanghai (13:00 UTC).
+
+Agent: Claude Code, working for the "Retention plan" Claude project only. The Sales plan project's reconciliation on `claude/YAA-001` is kept unchanged underneath this branch. Other Claude projects (Roadmap, Operations, Marketing, e-commerce/web lane) are not reconciled here.
+
+Task ID: YAA-001 (retention scope).
+
+Branch and commit: `claude/YAA-001-retention`, branched from `origin/claude/YAA-001` at 67a6516. The claim commit was pushed first, then this reconciliation commit. No changes to `main` or `claude/YAA-001`.
+
+Files changed:
+- TASKS.md: YAA-001 owner/status note; new Retention lane section YAA-019 to YAA-026; overlap list R-O1 to R-O6.
+- DECISIONS.md: appended record of retention approvals given before this repo; open conflicts.
+- HANDOVER.md: this entry.
+- docs/retention/status-2026-10-17.md: new; sanitized lane state.
+
+### Repository and local state found
+- This Claude project had **no local clone, commits or branches** for this repo before today. Its work lived in two places:
+  - claude.ai docs: the Retention Playbook, the Decision Log, and a project status note (`claude/Retention lane - status 2026-10-11.md`)
+  - the live Shopify changes listed below
+- Clone (shallow) of main at `23deff5`: working tree clean. Remote `origin` → github.com/jian-li5/you-are-angel, unchanged.
+- Remote branches found: `main` and `claude/YAA-001` (Sales plan project, 2 commits, in review). This branch builds on the latter and does not edit its entries.
+
+### Completed retention work
+| Date (2026) | Item | Evidence on 17 Oct (read-only) | State |
+|---|---|---|---|
+| 11 Oct | 3 segments: first-time buyers, win-back 45+ days, subscribed never bought | Segment IDs 1174384378120 / 1174384345352 / 1174384410888; 5 / 4 / 38 members | Deployed; in place |
+| 11 Oct | ANGELRETURNS: $10 off 2+ items, past buyers only, once each, shipping-combinable only | DiscountCodeNode 2179166339336, ACTIVE, 0 uses, updatedAt 2026-10-11T12:48:49Z | Deployed. Minimum changed from $60 to 2 items the same day |
+| 11 Oct | ANGELGLOW15: 15% photo/video thank-you, same limits | DiscountCodeNode 2179166372104, ACTIVE, 0 uses | Deployed |
+| 11 Oct | Customer metafield definition `angel.nail_size` (pinned); values and size tags on 2 customers | MetafieldDefinition 502407332104 | Deployed |
+| 11 Oct | Retention Playbook: welcome (4), abandoned checkout (3), post-purchase (3), win-back (2), weekly campaigns, parcel card, scorecard | claude.ai doc | Prepared |
+| 17 Oct | Halloween removed; calendar re-planned for Black Friday 27–30 Nov | Playbook revision | Prepared |
+| 17 Oct | Cross-project Decision Log doc | claude.ai doc | Prepared; overlaps DECISIONS.md (R-O1) |
+| 17 Oct | Setup checklist: final paste-ready copy for Shopify Messaging, plus a fast version | Playbook "Setup checklist" tab | Prepared; Jian executing (YAA-019) |
+| 17 Oct | Read-only catalogue tag audit (findings in the status doc) | GraphQL collection and product reads | Reported; handed to YAA-025 |
+
+### In progress
+**YAA-019, owned by Jian.** He is building the Shopify Messaging automations in Safari. The welcome flow was nearly done at 15:48 Asia/Shanghai on 17 Oct, by his report. Not verified, because the Admin API exposes no Messaging automation state to this agent.
+
+### Checks actually run today (read-only)
+- git: clone, status, remote -v, branch -a, ls-remote, fetch of `claude/YAA-001`, diff against main.
+- Read AGENTS.md, CLAUDE.md, README.md, PROJECT_STATUS.md, TASKS.md, HANDOVER.md, DECISIONS.md, and the Sales branch's files.
+- Shopify GraphQL reads: the two retention discount nodes, WELCOME10 by code, the three segments with member counts, and the customer metafield definitions in namespace `angel`.
+- ShopifyQL: orders, customers and returning customers from 11 Oct to today. Result: 0 / 0 / 0. Shop timezone CDT, USD.
+
+Not run: no storefront or email render; no state-changing tests.
+
+### Prepared / reviewed / approved / deployed / verified
+- Shopify items: approved in chat on 11 Oct, deployed, and verified read-only today.
+- Email copy and calendar: prepared only.
+- Automations: being built by Jian; not verified.
+
+Nothing was changed in Shopify, sent or deployed in this session.
+
+Approval reference and scope: DECISIONS.md, "2026-10-11 to 2026-10-17 — Retention plan project (pre-repo approvals)".
+
+### Overlaps flagged before starting any further task
+R-O1 to R-O6 in TASKS.md. The main ones:
+- offer copy depends on YAA-011
+- three overlapping 10% welcome mechanisms (YAA-007, Sales C4)
+- shared vs per-customer UGC reward (YAA-022)
+- delivery wording (YAA-002)
+- Black Friday early-access date (24 vs 26 Nov)
+
+### Blockers
+- Jian's decisions on YAA-011, R-O3, R-O5 and the early-access date.
+- The real shape and length of the Silk Fan Reverie products (YAA-025).
+- Agent access to Shopify admin (YAA-018).
+
+### Next action / proposed owner
+1. Jian finishes YAA-019, using the fast version for the last three flows, and resolves the open conflicts in DECISIONS.md.
+2. Codex reviews this branch together with `claude/YAA-001`. They can be merged in order: `claude/YAA-001` first, then this branch, which already contains it.
+3. The retention lane drafts the 20 Oct campaign (YAA-021) only after Jian confirms.
+
+PROJECT_STATUS.md is left for its owner. It still says the Claude connection is unverified; for this project it is verified by this push.
