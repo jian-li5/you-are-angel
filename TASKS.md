@@ -23,6 +23,6 @@ No task is marked deployed. Do not treat the audit's suggested 7-day/30-day date
 
 | ID | Priority | Task | Owner | Status | Acceptance |
 |---|---|---|---|---|---|
-| YAA-070 | P1 | Prepare the user-supplied eight retention emails and Shopify Messaging build/QA specification; implementation subtask of YAA-060 | Codex | claimed | Reconcile retention branch, avoid duplicate codes/flows, produce review PR; sending/activation remains unapproved |
+| YAA-070 | P1 | Prepare the user-supplied eight retention emails and Shopify Messaging build/QA specification; implementation subtask of YAA-060 | Codex | review (prepared only) | Reconcile retention branch, avoid duplicate codes/flows, produce review PR; sending/activation remains unapproved |
 
 Claude retention branch records Shopify Messaging as selected, codes already created and welcome flow underway. Do not duplicate its work. This task does not merge or replace that branch.
