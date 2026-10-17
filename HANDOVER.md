@@ -125,7 +125,7 @@ Files changed:
 - Clone (shallow) of main at `23deff5`: working tree clean. Remote `origin` → github.com/jian-li5/you-are-angel, unchanged.
 - Remote branches found: `main` and `claude/YAA-001` (Sales plan project, 2 commits, in review). This branch builds on the latter and does not edit its entries.
 - Found during this session: `claude/YAA-001-ecommerce` (e-commerce reconciliation, now 15e2da5) and `claude/YAA-001-marketing` (marketing reconciliation, now d9d15ff). Both branch from `claude/YAA-001` and pushed while this session was working.
-  - Retention IDs moved 019→040→060 because the lanes were renumbering at the same time. E-commerce now uses 040–046 and Marketing 019–026.
+  - Retention IDs moved 019→040→060 because the lanes were renumbering at the same time. E-commerce now uses 040–046 and Marketing 050–057 (4dab5b2).
   - TASKS.md proposes one ID block per lane.
   - The e-commerce entry still cites retention's first numbers (023, 024, 025). They now map to: the popup cap, folded into e-commerce YAA-043; YAA-064 (nail size); YAA-065 (catalogue tags).
   - The SendWILL sign-up cap was folded into e-commerce YAA-043.

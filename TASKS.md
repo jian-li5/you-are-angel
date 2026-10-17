@@ -44,10 +44,10 @@ Compare-at €0,00 fix; free shipping combinable with discounts; popup codes com
 
 ## Retention lane (added by Claude Code, YAA-001, 2026-10-17)
 Source: "Retention plan" Claude project (plan section 6). Lane state: docs/retention/status-2026-10-17.md.
-Retention uses the ID block YAA-060 to YAA-069. It renumbered twice on 17 Oct (019→040→060) because other lane branches were renumbering at the same time.
+Retention uses the ID block YAA-060 to YAA-069. It renumbered twice on 17 Oct (019→040→060) because other lane branches were renumbering at the same time; Marketing has since moved to 050–057.
 Proposed ID blocks per lane, to stop collisions:
 - Sales: 011–018
-- Marketing: 019–026
+- Marketing: 050–057
 - E-commerce: 040–046
 - Retention: 060–069
 - Operations / Roadmap: 080+ / 100+
@@ -90,7 +90,7 @@ No customer email has been sent by Claude.
 - **R-O5 UGC reward (YAA-063).** See the row above.
 - **R-O6 Catalogue tags (YAA-065)** are not retention scope. They are flagged for the catalogue owner.
 - **R-O7 Reviews and photos.** E-commerce YAA-044 shows reviews and photos on the site; retention YAA-063 collects them, through the photo reward and Judge.me requests. Both must use the same permission rule (YAA-008).
-- **R-O8 Marketing lane.**
-  - Marketing YAA-024 (Black Friday and December plan) owns the Black Friday offer and dates. Retention YAA-062 only writes the subscriber emails for it, including the early-access date (24 vs 26 Nov).
-  - Marketing YAA-021 (companion offer, first-order 10%) joins R-O3's welcome-code question.
-  - Marketing YAA-020 (update Marketing Plan v2) should drop Halloween, as decided on 16 Oct.
+- **R-O8 Marketing lane.** The marketing entry still cites retention's first numbers: YAA-021 is now YAA-062, and YAA-023 is now e-commerce YAA-043.
+  - Marketing YAA-055 (Black Friday and December plan) owns the Black Friday offer and dates. Retention YAA-062 only writes the subscriber emails for it, including the early-access date (24 vs 26 Nov).
+  - Marketing YAA-052 (companion offer, first-order 10%) joins R-O3's welcome-code question.
+  - Marketing YAA-051 (update Marketing Plan v2) should drop Halloween, as decided on 16 Oct.
