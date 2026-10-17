@@ -20,3 +20,6 @@ Prepared / reviewed / approved / deployed / verified state:
 Approval reference and scope (if any):
 Blockers:
 Next action / proposed owner:
+
+## 2026-10-18 — Codex — YAA-070
+Prepared docs/retention/email-flows-2026-10-18.md from user-supplied Claude copy after reading claude/YAA-001-retention. Eight emails plus trigger, exclusion, timing, QA and KPI rules. Existing reward codes are reported in Claude's reconciliation; not recreated or newly live-verified. Shopify Messaging selected per retention branch. No store flow, discount, test email or activation changed. Delivery/care/UGC terms and actual automation state remain blocked. Documentation reviewed for misleading claims and duplicate work; no app/code tests apply. Review branch codex/YAA-070-email-flows. Next: inspect current Shopify Messaging automation inventory and verify required links/offer terms before concrete activation approval.
