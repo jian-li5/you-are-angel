@@ -6,7 +6,7 @@ Statuses: backlog / claimed / in-progress / review / blocked / done. Track deplo
 
 | ID | Priority | Task | Owner | Status | Acceptance |
 |---|---|---|---|---|---|
-| YAA-001 | P0 | Reconcile existing Claude project, commits and deployed work | Claude Code (acknowledged 2026-10-17; sales-plan project done — other Claude projects not yet reconciled) | review (branch claude/YAA-001) | Handover lists local/remote changes, prior approvals and completed work; no overwrites |
+| YAA-001 | P0 | Reconcile existing Claude project, commits and deployed work | Claude Code (acknowledged 2026-10-17; sales-plan project done; retention project claimed 2026-10-17 on branch claude/YAA-001-retention — other Claude projects not yet reconciled) | review (claude/YAA-001); in-progress (claude/YAA-001-retention) | Handover lists local/remote changes, prior approvals and completed work; no overwrites |
 | YAA-002 | P0 | Confirm authoritative shipping, production and delivery promises; draft consistent wording | Codex + user business facts | blocked | User confirms real rules; draft distinguishes production/transit/preorder |
 | YAA-003 | P0 | Verify size-guide page and product sizing path | Unassigned until YAA-001 | backlog | Fresh evidence; identify wrong template only if reproduced; prepare local fix |
 | YAA-004 | P0 | Explain September purchase without reached-checkout and blank-source additions | Codex | backlog | Definitions, date/consent/express paths checked; unresolved causes labeled |
