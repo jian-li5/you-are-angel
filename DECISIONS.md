@@ -28,3 +28,13 @@ Recorded by Claude Code during YAA-001 (2026-10-17) from the "Sales plan" Claude
 
 ### Open conflict — main offer (YAA-011)
 Observed in store 2026-10-17 (read-only): BUY 2 GET 1 FREE is active with no end date (updated 2026-10-11T15:16:11Z), and the "Any 2 sets – 15% off" discount was deleted. Other Claude projects' scheduled tasks now describe B2G1 as the single main offer. Which decision is current is not recorded here. **Jian to confirm.**
+
+## 2026-10-11 to 2026-10-14 — Marketing plan project (no approvals for agent store changes)
+Recorded by Claude Code during YAA-001 (marketing-plan lane, 2026-10-17) from the "Marketing plan" Claude project chat. That project's sessions made **no** Shopify changes; every Shopify call was a read.
+- 2026-10-11 (~13:37 UTC): Jian said in that chat:
+  - he had tested BUY 2 GET 1 FREE and it works, and wants a companion offer next to it
+  - he would delete "10% off $99+" and "20% off $199+" and turn off the discount event himself
+
+  This is evidence for YAA-011, **not** a decision between B2G1 and the 15% two-set bundle.
+- 2026-10-14 12:00 UTC (read-only): both tier discounts showed status EXPIRED. Whether the discount event or timer is off has not been verified.
+- The 15:16 UTC change on 2026-10-11 has no recorded author in this project. It removed B2G1's end date, made it combine with shipping, and edited the sales scorecard prompt. This project's sessions did not make it.

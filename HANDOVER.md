@@ -102,3 +102,70 @@ Next action / proposed owner:
 2. Codex reviews this branch and the overlap list, then merges or comments.
 3. The sales lane then takes YAA-013 and YAA-014 when their inputs arrive.
 4. PROJECT_STATUS.md still says the Claude connection is unverified; it is now verified for this project. Left for the file owner to update.
+
+## 2026-10-17 ~21:00 Asia/Shanghai — Claude Code ("Marketing plan" Claude project) — YAA-001 reconciliation, marketing-plan lane
+Date/time/timezone: 2026-10-17, about 21:00 Asia/Shanghai (13:00 UTC).
+Agent: Claude Code for the "Marketing plan" Claude project only. Not covered: the Sales-plan lane (entry above, preserved unchanged) and the Roadmap, Operations, Retention and e-commerce/web projects.
+Task ID: YAA-001 (marketing-plan scope).
+Branch and commit: `claude/YAA-001-marketing`, branched from `origin/claude/YAA-001` (67a6516) so the Sales-lane entry is kept. Claim commit pushed first, then this reconciliation commit. `main` and `claude/YAA-001` were not touched.
+Files changed:
+- HANDOVER.md: this entry
+- TASKS.md: the YAA-001 owner cell, and an appended marketing-lane section (YAA-019 to YAA-026)
+- DECISIONS.md: an appended marketing-project record
+- docs/marketing-plan/marketing-plan-v2-summary.md: new, with a status note
+
+### Repository and local state found
+- Fresh shallow clone of main `23deff5`; working tree clean. Only remote is `origin` → github.com/jian-li5/you-are-angel (unchanged).
+- Remote branches were `main` and `claude/YAA-001` (pushed 2026-10-17 20:21 +08:00 by the Sales-plan Claude session). No PRs could be listed: `gh pr list` uses GraphQL, which is blocked here, and the REST check was not run.
+- This project had no earlier clone, commits or branches. Its work lives in:
+  - Claude project docs: `claude/marketing-plan-v2-summary.md` and the v1 plan .docx
+  - a Claude Doc: Marketing Plan v2
+  - two scheduled check-ins in its chat
+
+### Completed marketing-lane work (none of it changed the store)
+| Date (2026) | Item | State | Evidence |
+|---|---|---|---|
+| 11 Oct | Marketing Plan v2 (keep/add/cut decisions, channel mix, offers and budget, 8-week plan, scorecard) | Prepared; Jian read it and gave feedback 11 Oct; not approved as store changes | Claude Doc ac313752-5de4-48e0-b76c-349019b48e49; summary at docs/marketing-plan/ |
+| 11 Oct | Project summary `claude/marketing-plan-v2-summary.md` | Prepared | Claude project doc |
+| 11 Oct | Week 1 checklist rewritten after Jian's feedback (5 Halloween designs, 3–4 videos, B2G1 test ticked from Jian's report) | Prepared | Doc rev 10 |
+| 11 Oct | Proposed skill "yaa-weekly-scorecard" (review card) | Unknown whether Jian saved it; duplicates YAA-016, so do not use it | Chat |
+| 14 Oct | Mid-week check (scheduled trigger trig_01PGG2H9zPFjxHvSDkt47gMv, read-only) | Done | Discount tiers EXPIRED; `seen-on-tiktok` absent; 39 of 48 sessions 12–14 Oct landed on `/`; no orders |
+| 18 Oct (pending) | Week 1 review (trig_01Rd822QGcFnDAght5QA253w, 12:00 UTC) | Scheduled; read-only Shopify plus ticks in the marketing doc | Will log to that chat |
+
+User-made live changes reported in this project: Jian tested B2G1 at checkout (11 Oct) and expired the 10%/$99 and 20%/$199 tiers (seen EXPIRED on 14 Oct). See DECISIONS.md.
+
+### Current state, read-only checks 2026-10-17 ~12:55 UTC (shop tz CDT, USD)
+- `/collections/seen-on-tiktok`: **does not exist** (collectionByHandle null).
+- BUY 2 GET 1 FREE: active, no end date; combines with shipping = true, with order and product = false. Updated 2026-10-11T15:16:11Z.
+- Free shipping on every order: active; combines with order and product discounts.
+- Active codes include WELCOME10, ANGELGLOW15, ANGELRETURNS and the SW- popup codes. The tier discounts are not active.
+- Inventory policy on a sampled Halloween variant: CONTINUE (made-to-order).
+- Sessions 12–17 Oct by landing page: 66 in total, 54 on `/` (82%). 4 cart-addition sessions, 4 reached checkout and 0 completed, all on `/`. Team or test sessions are not excluded.
+- Sales by product, 12–17 Oct: no rows, so 0 orders. The Halloween push (deadline 16 Oct) produced no recorded sales. Whether the videos were posted is not verified.
+
+### Superseded or conflicting facts in the marketing plan (flagged, not yet edited; task YAA-020)
+- **M1:** v2 says overselling is blocked and B2G1 does not combine with shipping. Both changed later on 11 Oct (13:20 and 15:16 UTC). The hero-stock rule should be reframed around made-to-order lead time.
+- **M2:** v2 sets B2G1 plus free shipping as the single message. That conflicts with the Sales-lane decision for "Any 2 sets – 15% off" (YAA-011, Sales C1). Jian's 11 Oct remark favours keeping B2G1, but no decision is recorded.
+- **M3:** v2's Black Friday plan (B2G1 plus a gift for the first 15 orders) conflicts with the Operations lane's bundle that pauses B2G1 (YAA-024).
+- **M4:** v2's week 1 included a phone test order and app installs. Under AGENTS.md these are Jian-only, approval-gated actions (YAA-015, YAA-023).
+- **M5:** v2 starts Spark Ads on 26 Oct. The Codex audit says don't expand paid traffic before checkout and attribution are verified (YAA-004/007). Deferred as YAA-025.
+- **M6:** v2's 90-day metrics (13 Jul–11 Oct) and the audit's (19 Jul–16 Oct) use different windows. Both are labelled; no correction is needed.
+
+### Checks actually run today
+- git: clone (depth 1), status, remote -v, branch -a, ls-remote, fetch of `claude/YAA-001`, diff main..origin/claude/YAA-001.
+- Read: CLAUDE.md, AGENTS.md, README.md, PROJECT_STATUS.md, TASKS.md, HANDOVER.md, DECISIONS.md, the audit HTML text, and the project's memory and docs list.
+- Shopify reads: collectionByHandle (two handles), active discountNodes, one product's variants; ShopifyQL sessions by landing page and sales by product for 12–17 Oct.
+- No app tests apply. No storefront, cart or checkout tests.
+
+### Prepared / reviewed / approved / deployed / verified
+- Prepared: the plan, the summary and the link convention.
+- Reviewed: Jian gave chat feedback on 11 Oct.
+- Approved, deployed: none by this lane.
+- Verified: read-only state above.
+
+Approval reference: DECISIONS.md, "2026-10-11 to 2026-10-14 — Marketing plan project".
+Blockers: YAA-011 offer decision; Jian's hero list (YAA-019); YAA-014 link convention; the Operations Black Friday plan (YAA-024).
+Next action / proposed owner:
+1. Jian decides YAA-011 and the hero list.
+2. Codex reviews `claude/YAA-001` and `claude/YAA-001-marketing` (this branch includes the Sales commits) and merges or comments.
+3. The marketing lane then takes YAA-020 (update the plan) and drafts YAA-021 copy. It will not start creator, link, test-order or ads work owned elsewhere.
