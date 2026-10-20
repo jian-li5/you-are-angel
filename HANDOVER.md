@@ -108,7 +108,7 @@ Date/time/timezone: 2026-10-17, about 21:00 Asia/Shanghai (13:00 UTC).
 Agent: Claude Code, working for the "E-Commerce plan" Claude project only (plan section 5: conversion and store). The Sales plan entry above is unchanged and still stands for its lane. Marketing, Retention, Operations and Roadmap projects are not reconciled here.
 Task ID: YAA-001 (e-commerce scope).
 Branch and commit: `claude/YAA-001-ecommerce`, branched from `claude/YAA-001` (67a6516) so the sales-lane changes are kept. Claim commit pushed first, then this commit. No changes to `main` or `claude/YAA-001`.
-Files changed: TASKS.md (YAA-001 status note; new "E-commerce-plan lane" section, YAA-040..025), HANDOVER.md (this entry), DECISIONS.md (appended pre-repo e-commerce record).
+Files changed: TASKS.md (YAA-001 status note; new "E-commerce-plan lane" section, YAA-040..046), HANDOVER.md (this entry), DECISIONS.md (appended pre-repo e-commerce record).
 
 ### Repository and local state found
 - This project had **no local clone, commits or branches** before today. Its work lived in one project chat (11 Oct) and one live store change.
@@ -158,7 +158,7 @@ Compare-at fix: approved (pre-repo, in chat), deployed, verified by sample. Ever
 ### Next action / proposed owner
 1. Codex reviews `claude/YAA-001-ecommerce` (it contains `claude/YAA-001`; the marketing and retention branches do too, so the three lane branches will conflict only in TASKS.md and HANDOVER.md appends and the YAA-001 row) and accepts or changes the proposed owners.
 2. Jian answers YAA-011 and checks pixels (YAA-042).
-3. Once accepted, the e-commerce lane claims YAA-003 or YAA-040/020 (in one rebuilt draft), pushing a claim first.
+3. Once accepted, the e-commerce lane claims YAA-003 or YAA-041 (in one rebuilt draft), pushing a claim first.
 4. PROJECT_STATUS.md still says Claude is unverified; left for its owner to update.
 ## 2026-10-17 ~21:00 Asia/Shanghai — Claude Code ("Marketing plan" Claude project) — YAA-001 reconciliation, marketing-plan lane
 Agent: Claude Code for the "Marketing plan" Claude project only. Not covered: the Sales-plan lane (entry above, preserved unchanged) and the Roadmap, Operations, Retention and e-commerce/web projects.
@@ -294,5 +294,43 @@ R-O1 to R-O8 in TASKS.md. The main ones:
 3. The retention lane drafts the 20 Oct campaign (YAA-062) only after Jian confirms.
 
 PROJECT_STATUS.md is left for its owner. It still says the Claude connection is unverified; for this project it is verified by this push.
+
 ## 2026-10-18 — Codex — YAA-070
 Prepared docs/retention/email-flows-2026-10-18.md from user-supplied Claude copy after reading claude/YAA-001-retention. Eight emails plus trigger, exclusion, timing, QA and KPI rules. Existing reward codes are reported in Claude's reconciliation; not recreated or newly live-verified. Shopify Messaging selected per retention branch. No store flow, discount, test email or activation changed. Delivery/care/UGC terms and actual automation state remain blocked. Documentation reviewed for misleading claims and duplicate work; no app/code tests apply. Review branch codex/YAA-070-email-flows. Next: inspect current Shopify Messaging automation inventory and verify required links/offer terms before concrete activation approval.
+
+## 2026-10-20 21:30 Asia/Shanghai — Claude Code ("E-Commerce plan" Claude project) — lane merge and status update
+Date/time/timezone: 2026-10-20, about 21:30 Asia/Shanghai (13:30 UTC).
+Agent: Claude Code, E-Commerce plan project.
+Task ID: YAA-001 (merge of lane branches); updates to YAA-011, YAA-040, YAA-041, YAA-042, YAA-043, YAA-045.
+Branch and commit: merge branch `claude/merge-lanes` → `main` (fast-forward, no force). Merged: `claude/YAA-001` (Sales, via the e-commerce branch), `claude/YAA-001-ecommerce`, `claude/YAA-001-marketing`, `claude/YAA-001-retention`, `codex/YAA-070-email-flows`. Lane branches left in place, not deleted.
+Approval reference: Jian in the E-Commerce plan chat, 2026-10-20, asked to merge the branches so tasks are not repeated. Repository only; no store approval.
+Files changed: TASKS.md, HANDOVER.md, DECISIONS.md (conflict resolution and this update). The docs/ files from the marketing, retention and Codex branches came in unchanged.
+
+### How conflicts were resolved
+- Every conflict was two lanes appending to the end of the same file. Both sides were kept in full; nothing was dropped or reworded.
+- The YAA-001 row had four different owner cells. They were combined into one row listing the four reconciled lanes.
+- Stale cross-references in the e-commerce sections were updated to the final IDs (retention 060–069, e-commerce 040–046).
+- Not changed: other lanes' text, including their now-outdated "YAA-011 open" notes and the marketing section's old retention numbers (already flagged by retention R-O8). Each lane refreshes its own text on its next session.
+
+### Status updates (read-only checks today)
+- **YAA-011 offer: decided.** Jian says the Operations plan updated the offer. That plan is not in this repo and was not read. Live discounts, all set 2026-10-19 10:40 UTC, show this schedule:
+  - BUY 2 GET 1 FREE ends 26 Oct 09:00 UTC (17:00 Shanghai)
+  - Bundle & Save: 2 sets 15% off (min. 2 items), 3+ sets 25% off, 26 Oct 09:00 UTC – 27 Nov 04:59 UTC
+  - Black Friday: 2 sets 20%, 3+ sets 30%, 27 Nov 05:00 UTC – 1 Dec 04:59 UTC
+  - Bundle & Save 15% / 25% again from 1 Dec 05:00 UTC, no end date
+  - "10% off $99+" and "20% off $199+" no longer active; free shipping on every order unchanged
+- **Announcement bar still says "BUY 2 GET 1 FREE"** (MAIN header updated 2026-10-20 12:02 UTC). It must change to Bundle & Save when B2G1 ends on 26 Oct. Owner unconfirmed (probably Operations, which set the schedule).
+- The bar's delivery wording now reads "10–14 working days" (changed today); product templates still say 7–10. YAA-002 owns this.
+- **YAA-040 timer: done.** The rendered Petal Parade page (fetched 2026-10-20) has no countdown. The block is still enabled in both product templates but has no sale end date to show.
+- **YAA-041 demo text:** "All Skin Care / UP TO 30% OFF / All Body Care / FREE SHPPING" is saved on a header mega-menu block linked to a "Store" menu item. The main menu (HOME, SHOP, COLLECTIONS, JOIN US, CONTACT US) has no "Store", so it never shows; the rendered page confirms this. "Stawberry Bloom" (product 10454974890248) is still misspelled.
+- **YAA-042 pixels:** Jian says Meta is connected; TikTok was connected but the TikTok Shop was closed, so it is probably not connected now. Not checked by an agent (no read_pixels scope).
+- Social links: still none in MAIN theme settings (settings_data updated 2026-10-18).
+
+### Checks actually run
+git fetch, ls-remote, five merges, conflict-marker and ancestor checks. Shopify GraphQL reads: MAIN theme files, active and scheduled discounts, menus, one product. WebFetch of one live product page. No Shopify changes, no deploy.
+
+### Next action / proposed owner
+1. Banner swap to Bundle & Save on 26 Oct (Operations or Jian; theme edit).
+2. YAA-043 popup: confirm which popup app is live (Trustoo embed or SendWILL) and pick WELCOME10 or the SW- code (Sales + Retention).
+3. YAA-045 cart prompt, now unblocked: "add one more set to save 15% / 25%". E-commerce lane prepares it in the single draft (YAA-012) once ownership is accepted.
+4. Decide whether to reconnect the TikTok pixel before any TikTok ads (YAA-056).

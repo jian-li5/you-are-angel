@@ -57,3 +57,16 @@ Recorded by Claude Code during YAA-001 (2026-10-17) from the "Retention plan" Cl
 - **R-O3.** Which 10% welcome mechanism is canonical: the SW- popup codes, WELCOME10, or both. Jian to decide (see YAA-007).
 - **R-O5.** UGC reward: the shared ANGELGLOW15 (past buyers only, once each) or one code per customer (Sales log). Jian to decide (YAA-063).
 - **Black Friday early-access date.** Marketing Plan v2 says 24 Nov; Operations OPS-20 says 26 Nov. Jian to decide.
+
+## 2026-10-20 — Main offer (closes YAA-011)
+Jian (E-Commerce plan chat, 2026-10-20): the offer was updated in the Operations plan. That plan is not in this repo. The schedule below is what the live store shows (read-only; discounts last updated 2026-10-19 10:40 UTC):
+- BUY 2 GET 1 FREE until 26 Oct 09:00 UTC
+- Bundle & Save: 2 sets 15% off, 3+ sets 25% off, 26 Oct – 27 Nov 04:59 UTC
+- Black Friday: 2 sets 20% off, 3+ sets 30% off, 27 Nov 05:00 UTC – 1 Dec 04:59 UTC
+- Bundle & Save from 1 Dec, no end date
+- Free shipping on every order
+
+The Operations lane should add its own record when it reconciles. This entry is not approval for any store change.
+
+## 2026-10-20 — Repository merge
+Jian asked the E-Commerce lane to merge the lane branches so tasks are not repeated. This approval covers this repository's main branch only.
