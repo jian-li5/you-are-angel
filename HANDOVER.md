@@ -294,3 +294,5 @@ R-O1 to R-O8 in TASKS.md. The main ones:
 3. The retention lane drafts the 20 Oct campaign (YAA-062) only after Jian confirms.
 
 PROJECT_STATUS.md is left for its owner. It still says the Claude connection is unverified; for this project it is verified by this push.
+## 2026-10-18 — Codex — YAA-070
+Prepared docs/retention/email-flows-2026-10-18.md from user-supplied Claude copy after reading claude/YAA-001-retention. Eight emails plus trigger, exclusion, timing, QA and KPI rules. Existing reward codes are reported in Claude's reconciliation; not recreated or newly live-verified. Shopify Messaging selected per retention branch. No store flow, discount, test email or activation changed. Delivery/care/UGC terms and actual automation state remain blocked. Documentation reviewed for misleading claims and duplicate work; no app/code tests apply. Review branch codex/YAA-070-email-flows. Next: inspect current Shopify Messaging automation inventory and verify required links/offer terms before concrete activation approval.

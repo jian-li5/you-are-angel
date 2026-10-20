@@ -74,7 +74,7 @@ Source: "E-Commerce plan" Claude project (plan section 5, You Are Angel – 50 S
 
 | ID | Priority | Task | Owner | Status | Acceptance |
 |---|---|---|---|---|---|
-| YAA-070 | P1 | Prepare the user-supplied eight retention emails and Shopify Messaging build/QA specification; implementation subtask of YAA-060 | Codex | claimed | Reconcile retention branch, avoid duplicate codes/flows, produce review PR; sending/activation remains unapproved |
+| YAA-070 | P1 | Prepare the user-supplied eight retention emails and Shopify Messaging build/QA specification; implementation subtask of YAA-060 | Codex | review (prepared only) | Reconcile retention branch, avoid duplicate codes/flows, produce review PR; sending/activation remains unapproved |
 
 Claude retention branch records Shopify Messaging as selected, codes already created and welcome flow underway. Do not duplicate its work. This task does not merge or replace that branch.
 ## Marketing-plan lane (added by Claude Code, YAA-001, 2026-10-17)
