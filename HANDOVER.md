@@ -352,3 +352,21 @@ No store changes in this check.
 ## 2026-10-20 22:10 Asia/Shanghai — Claude Code (E-Commerce plan) — correction
 The Shipping Policy already says 10–14 working days, including 2–3 days to finish and pack, plus 5–7 extra days for Preorder. Source: Admin API shopPolicies; policy updated 2026-10-20 11:54 UTC. The previous entry's "still 7–10" came from a stale cached fetch of the public page. Delivery wording is now consistent across the store; only the retention email copy still says 7–10. No store change made.
 
+
+## 2026-10-20 22:30 Asia/Shanghai — Claude Code ("Retention plan" Claude project) — YAA-060 done; YAA-067 opened
+- **YAA-060 done (Jian's report, 20 Oct 22:14 Asia/Shanghai).** Jian built and switched on the four Shopify Messaging automations (welcome, abandoned checkout, post-purchase, win-back) himself, from the Setup checklist copy. **Not agent-verified:** no connected API exposes Messaging automation state. Claude sent no email.
+- **Read-only checks 20 Oct, store data from 17 Oct to today:** 58 sessions, 1 add-to-cart session, 0 completed checkouts, 0 new customers. 38 subscribed-never-bought. ANGELRETURNS and ANGELGLOW15 each have 0 uses.
+- **YAA-067 opened (P0).** Live copy now conflicts with the decisions of 20 Oct:
+  - Delivery is now 10–14 working days, but welcome email 4, abandoned email 2 and post-purchase email 1 say 7–10.
+  - Welcome email 4 says "the third set is free". BUY 2 GET 1 FREE ends 26 Oct 09:00 UTC, when Bundle & Save starts.
+
+  Replacement text was given to Jian in chat; the retention playbook is updated to match.
+- **Overlap noted.** Codex YAA-070 (`docs/retention/email-flows-2026-10-18.md`) prepared a stricter copy spec. It flags these claims in the retention copy:
+  - "5+ wears"
+  - "most questions"
+  - a delivery promise
+  - post-purchase timing that counts from dispatch rather than confirmed delivery
+
+  Jian's live build follows the Claude checklist, not YAA-070. Proposal: Codex reviews the live copy against YAA-070, and changes go through YAA-067, so there is no second build.
+- **Offer interaction for YAA-009.** ANGELRETURNS ($10 off 2+ items) does not combine with product discounts. From 26 Oct, Bundle & Save gives 15% off 2 sets, so on 2 sets the code saves about the same as the bundle, and a win-back customer gains little extra. Jian or the margin owner should decide whether to keep or change the code.
+- Branch: `claude/YAA-060-live` from main 931478e. Files: TASKS.md (YAA-060 status, new YAA-067), HANDOVER.md (this entry). No Shopify change.
