@@ -40,3 +40,20 @@ Recorded by Claude Code during YAA-001 (marketing-plan lane, 2026-10-17) from th
   This is evidence for YAA-011, **not** a decision between B2G1 and the 15% two-set bundle.
 - 2026-10-14 12:00 UTC (read-only): both tier discounts showed status EXPIRED. Whether the discount event or timer is off has not been verified.
 - The 15:16 UTC change on 2026-10-11 has no recorded author in this project. It removed B2G1's end date, made it combine with shipping, and edited the sales scorecard prompt. This project's sessions did not make it.
+## 2026-10-11 to 2026-10-17 — Retention plan project (pre-repo approvals)
+Recorded by Claude Code during YAA-001 (2026-10-17) from the "Retention plan" Claude project chat. These approvals predate this repository's read-only rules. They cover only the changes listed and authorize nothing further.
+- **2026-10-11.** Jian asked Claude to "exercise the part for retention plan, use any skill/app as necessary". Under that request Claude created in Shopify, with each write confirmed through the Shopify app prompt:
+  - 3 customer segments
+  - discount codes ANGELRETURNS and ANGELGLOW15
+  - customer metafield definition `angel.nail_size`
+  - nail-size values and tags on 2 customer records
+
+  Details are in docs/retention/status-2026-10-17.md. No email was sent.
+- **2026-10-17.** Jian decided to skip Halloween and move straight to Black Friday (also recorded by Operations as OPS-01).
+- **2026-10-17.** Email automations will run in **Shopify Messaging**. SendWILL is on its Free plan, which has no automations, so it keeps only the popup and its code email. Jian asked Claude to switch on the 4 automations. Claude could not: Shopify's Cloudflare check blocked both agent browsers, and the Admin API cannot create Messaging automations. Jian is building and switching them on himself in Safari. **Each send-capable automation is Jian's own action; Claude holds no approval to send customer email.**
+
+### Open conflicts raised by the retention lane
+- **R-O1.** The claude.ai "Decision Log" doc duplicates this file. Proposal: this file is authoritative. Jian to confirm.
+- **R-O3.** Which 10% welcome mechanism is canonical: the SW- popup codes, WELCOME10, or both. Jian to decide (see YAA-007).
+- **R-O5.** UGC reward: the shared ANGELGLOW15 (past buyers only, once each) or one code per customer (Sales log). Jian to decide (YAA-063).
+- **Black Friday early-access date.** Marketing Plan v2 says 24 Nov; Operations OPS-20 says 26 Nov. Jian to decide.
