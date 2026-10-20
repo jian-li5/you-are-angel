@@ -334,3 +334,10 @@ git fetch, ls-remote, five merges, conflict-marker and ancestor checks. Shopify 
 2. YAA-043 popup: confirm which popup app is live (Trustoo embed or SendWILL) and pick WELCOME10 or the SW- code (Sales + Retention).
 3. YAA-045 cart prompt, now unblocked: "add one more set to save 15% / 25%". E-commerce lane prepares it in the single draft (YAA-012) once ownership is accepted.
 4. Decide whether to reconnect the TikTok pixel before any TikTok ads (YAA-056).
+
+## 2026-10-20 21:30 Asia/Shanghai — Claude Code (E-Commerce plan) — YAA-041 title fix; YAA-002 delivery fact
+Branch and commit: direct to `main` (fast-forward), documentation only.
+- **Deployed:** product 10454974890248 title "Stawberry Bloom" → "Strawberry Bloom", approved by Jian (DECISIONS.md 2026-10-20). Handle and SEO unchanged. Verified by mutation response; storefront not re-fetched.
+- **YAA-002:** Jian confirms 10–14 working days. Places still saying 7–10 (from the 17 and 20 Oct theme reads): product Shipping tab, the "Ships in 7–10 Days" trust line and the cost-per-wear block on product.yaa-template-product-page, and retention email copy. Shipping Policy not re-checked. No other store change made.
+Next action: Jian approves updating those product-page texts (live theme edit; MAIN theme writes are blocked for agents, so Jian pastes or Claude prepares a draft). Retention lane updates its email copy.
+

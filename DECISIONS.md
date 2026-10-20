@@ -70,3 +70,7 @@ The Operations lane should add its own record when it reconciles. This entry is 
 
 ## 2026-10-20 — Repository merge
 Jian asked the E-Commerce lane to merge the lane branches so tasks are not repeated. This approval covers this repository's main branch only.
+
+## 2026-10-20 — Product title fix and delivery time
+- **Approved and deployed:** Jian approved fixing the "Stawberry Bloom" spelling (E-Commerce plan chat, 2026-10-20 21:22 Asia/Shanghai). Claude changed the title of product 10454974890248 to "Strawberry Bloom" at about 13:25 UTC. Scope: that one title only. The handle (strawberry-bloom-press-on-nails) and SEO title were already correct and were not changed. Verified by the mutation response.
+- **Business fact (YAA-002):** Jian states delivery is now 10–14 working days. This is not approval to change the other places that still say 7–10; each needs its own scoped approval.
