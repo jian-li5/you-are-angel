@@ -341,3 +341,11 @@ Branch and commit: direct to `main` (fast-forward), documentation only.
 - **YAA-002:** Jian confirms 10–14 working days. Places still saying 7–10 (from the 17 and 20 Oct theme reads): product Shipping tab, the "Ships in 7–10 Days" trust line and the cost-per-wear block on product.yaa-template-product-page, and retention email copy. Shipping Policy not re-checked. No other store change made.
 Next action: Jian approves updating those product-page texts (live theme edit; MAIN theme writes are blocked for agents, so Jian pastes or Claude prepares a draft). Retention lane updates its email copy.
 
+## 2026-10-20 21:40 Asia/Shanghai — Claude Code (E-Commerce plan) — delivery wording check (YAA-002)
+- Correction: the previous entry listed the product Shipping tab, trust line and cost-per-wear box as still saying 7–10. That came from the 17 Oct theme read. Jian had already changed them; MAIN template updated 2026-10-20 11:55 UTC.
+- Verified now: MAIN theme files plus a rendered fetch of /products/strawberry-bloom-press-on-nails. Banner "Delivered in 10-14 working days", trust line "Delivered in 10–14 Days", Shipping tab "Delivered in 10–14 working days". Preorder +5–7 days unchanged.
+- Still 7–10: the Shipping Policy page ("Your nails will arrive in 7–10 working days from the day you order"). Retention email copy also still says 7–10.
+- Also seen, for the 26 Oct offer change: product-page scrolling text "BUY 2 GET 1 FREE!" and the banner dropdown "Buy any 2 sets, get a 3rd free". The default product.json template still has old blocks, but no active product uses it.
+- To check under YAA-008/044: the Judge.me review widget on the product template is set to review_data "sample_data". The rendered page showed no reviews ("Be the first to review"), so no sample reviews are displayed now.
+No store changes in this check.
+
