@@ -349,3 +349,6 @@ Next action: Jian approves updating those product-page texts (live theme edit; M
 - To check under YAA-008/044: the Judge.me review widget on the product template is set to review_data "sample_data". The rendered page showed no reviews ("Be the first to review"), so no sample reviews are displayed now.
 No store changes in this check.
 
+## 2026-10-20 22:10 Asia/Shanghai — Claude Code (E-Commerce plan) — correction
+The Shipping Policy already says 10–14 working days, including 2–3 days to finish and pack, plus 5–7 extra days for Preorder. Source: Admin API shopPolicies; policy updated 2026-10-20 11:54 UTC. The previous entry's "still 7–10" came from a stale cached fetch of the public page. Delivery wording is now consistent across the store; only the retention email copy still says 7–10. No store change made.
+
