@@ -74,3 +74,7 @@ Jian asked the E-Commerce lane to merge the lane branches so tasks are not repea
 ## 2026-10-20 — Product title fix and delivery time
 - **Approved and deployed:** Jian approved fixing the "Stawberry Bloom" spelling (E-Commerce plan chat, 2026-10-20 21:22 Asia/Shanghai). Claude changed the title of product 10454974890248 to "Strawberry Bloom" at about 13:25 UTC. Scope: that one title only. The handle (strawberry-bloom-press-on-nails) and SEO title were already correct and were not changed. Verified by the mutation response.
 - **Business fact (YAA-002):** Jian states delivery is now 10–14 working days. This is not approval to change the other places that still say 7–10; each needs its own scoped approval.
+
+## 2026-10-30 — Marketing plan project: product reference and creator video
+- Jian, Marketing plan chat, 2026-10-30 16:38 Asia/Shanghai: "please add yaa160 to the product description". Scope: append "Product Ref: YAA160" to Angel Aura Shimmer Base Set (product 10597815320840). Nothing else changed.
+- Hannah's creator video was added to the homepage "Seen on TikTok" section by Jian himself in the theme editor. Agents cannot write the MAIN theme. No agent approval was involved.

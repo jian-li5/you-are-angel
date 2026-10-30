@@ -352,3 +352,24 @@ No store changes in this check.
 ## 2026-10-20 22:10 Asia/Shanghai — Claude Code (E-Commerce plan) — correction
 The Shipping Policy already says 10–14 working days, including 2–3 days to finish and pack, plus 5–7 extra days for Preorder. Source: Admin API shopPolicies; policy updated 2026-10-20 11:54 UTC. The previous entry's "still 7–10" came from a stale cached fetch of the public page. Delivery wording is now consistent across the store; only the retention email copy still says 7–10. No store change made.
 
+
+## 2026-10-30 ~16:50 Asia/Shanghai — Claude Code ("Marketing plan" project) — creator video, product ref, week 3 status
+Agent: Claude Code, Marketing plan project. Branch: `main`, documentation only, following the E-commerce lane's practice since the 20 Oct merge.
+Tasks: YAA-050, YAA-053, and a creator-section update.
+
+### Store changes
+| Change | Who | State | Evidence |
+|---|---|---|---|
+| Angel Aura Shimmer Base Set description: appended "Product Ref: YAA160" | Claude, approved by Jian (DECISIONS.md 2026-10-30) | Deployed; verified | productUpdate returned no userErrors; description ends "Product Ref: YAA160" |
+| Hannah creator video (4.3 MB, compressed by Claude from 83 MB) uploaded to Files as `hannah-creator-video-540p.mp4`, plus a poster image | Jian | Deployed | Files API: Video READY, 4,264,085 bytes |
+| Homepage `seen_on_tiktok_reels`: new first block with Hannah's video, linked to `angel-aura-shimmer-base-set` | Jian, in the theme editor | Deployed; verified read-only | MAIN theme 204314181896 `templates/index.json` updated 2026-10-30T08:42:24Z; block `product_L3hEji` is first in block_order |
+
+### Marketing status (read-only)
+- **YAA-050:** `/collections/seen-on-tiktok` was built 25 Oct with 10 designs. TikTok and Instagram bio links were updated 27 Oct (Jian). The first landings on the collection came 28–29 Oct (3 sessions, no referrer).
+- **Orders:** 0 since 12 Oct. Sessions since 29 Oct: 40, all direct, 0 cart additions.
+- **Creator codes:** 35 ANGEL-* codes exist; all had 0 uses on 29 Oct.
+- **YouTube Shorts:** a 7-day plan, one YAA300–306 design per day, linking straight to each product page with `utm_source=youtube&utm_campaign=shorts`. Copy is saved on Jian's Mac at Desktop/videos/系列三/YouTube_week_YAA300-306.txt. Posting is not verified.
+- **YAA-052 (companion offer)** and **YAA-055 (Black Friday offer):** overtaken by the 20 Oct offer decision (Bundle & Save; Black Friday 20%/30%). Still open: the early-access date (24 vs 26 Nov), holiday creators and featured designs, due 8 Nov.
+
+Checks run: Shopify GraphQL reads (theme file, files, product) and ShopifyQL sessions and sales. No app tests apply.
+Next: the Clarity review of homepage sessions with 0 carts (Jian); the week-4 review on 8 Nov.
